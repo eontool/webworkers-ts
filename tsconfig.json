@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "removeComments": false,
+        "sourceMap": false,
+        "outDir": "public/js/"
+    },
+    "compileOnSave": true,
+    "files": [
+        "source/app.ts",
+        "source/workerA.ts"
+    ],
+    "exclude": [
+        "/node_modules",
+        "/.vscode"
+    ]
+}

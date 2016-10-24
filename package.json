@@ -1,0 +1,12 @@
+{
+  "name": "webworkers-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/app.js",
+  "scripts": {
+    "browserify": "browserify build/app.js -o public/js/bundle.js"
+  },
+  "author": "eontool",
+  "dependencies": {
+  }
+}

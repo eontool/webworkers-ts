@@ -9,7 +9,7 @@
     "compileOnSave": true,
     "files": [
         "source/app.ts",
-        "source/workerA.ts"
+        "source/worker.ts"
     ],
     "exclude": [
         "/node_modules",

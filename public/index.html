@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mainApp" ng-controller="mainCtrl">
+<html lang="en">
 
 <head>
 	<title>Web Workers</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.min.css" rel="stylesheet" media="screen">
-	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" media="screen">
-
-	<script src="http://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" charset="utf-8"></script>
-	<script src="http://cdn.peerjs.com/0.3/peer.min.js" charset="utf-8"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" charset="utf-8"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-
-	<script src="js/app.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
 
-			<div class="row text-xs-center mt-3 mb-3">
-			  <div class="col-lg-12">
-			    <h1>Web Workers</h1>
-					<hr>
-			  </div>
-			</div>
+	<h1>Web workers</h1>
 
-			<div class="row text-xs-center mt-3 mb-3">
-				<div class="col-lg-12">
-					<h3>Web workers support: <span ng-bind="support"></span></h3>
-					<hr>
-				</div>
-			</div>
+	<p>Web workers allow the browser to execute multiple javascript threads to compute operations without interrumping the main thread the user interacts on.</p>
 
-    </div>
+	<p>Large computations usually affect the user interaction noticible by a slowdown in performace and a browser non-responding tab warning.</p>
+
+	<form>
+		<button type="button" id="button">Start</button>
+		<br>
+		<textarea name="name" rows="10" cols="60" placeholder="Type text while the workers are busy..."></textarea>
+	</form>
+	<p>Main thread timer: <input type="text" id="time" readonly=""></p>
+
+	<hr>
+
+	<div id="debug">
+
+	</div>
+
+	<script src="js/app.js"></script>
+
 </body>
 
 </html>
